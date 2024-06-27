@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imran Shaik - Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0e0e0e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #0e0e0e 30%, #1f1f1f);
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #00d1b2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.2em;
+            color: #e0e0e0;
+            margin-top: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.2em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #00d1b2;
+        }
+        .container {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 80px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #00d1b2;
+            padding-bottom: 10px;
+            font-size: 2em;
+        }
+        .section p {
+            line-height: 1.8;
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f;
+            color: #b5b5b5;
+        }
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto 20px;
+            border: 3px solid #00d1b2;
+        }
+        .project {
+            background-color: #2b2b2b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .project h3 {
+            margin-top: 0;
+            color: #00d1b2;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .project a {
+            color: #00d1b2;
+            text-decoration: none;
+            transition: text-decoration 0.3s;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .skill {
+            background-color: #3a3a3a;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .skill span {
+            color: #00d1b2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imran Shaik</h1>
+        <p>UI Developer | Angular & React Specialist</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <img src="profile.jpg" alt="Imran Shaik" class="profile-pic">
+            <p>Hello! I'm Imran Shaik, a passionate UI developer with extensive experience in Angular and React. I love creating innovative and user-friendly interfaces that leverage the latest advancements in web technologies. Welcome to my portfolio!</p>
+        </div>
+        <div id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of project 1, highlighting the technologies used and the problem it solves.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of project 2, highlighting the technologies used and the problem it solves.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Description of project 3, highlighting the technologies used and the problem it solves.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill"><span>&#9679;</span> HTML</div>
+                <div class="skill"><span>&#9679;</span> CSS</div>
+                <div class="skill"><span>&#9679;</span> JavaScript</div>
+                <div class="skill"><span>&#9679;</span> Angular</div>
+                <div class="skill"><span>&#9679;</span> React</div>
+                <div class="skill"><span>&#9679;</span> TypeScript</div>
+                <div class="skill"><span>&#9679;</span> Node.js</div>
+                <div class="skill"><span>&#9679;</span> Git</div>
+                <div class="skill"><span>&#9679;</span> REST APIs</div>
+            </div>
+        </div>
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me at:</p>
+            <p>Email: <a href="mailto:imran@example.com">imran@example.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/imranshaik" target="_blank">linkedin.com/in/imranshaik</a></p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Imran Shaik. All rights reserved.</p>
+    </footer>
+</body>
+</html>
